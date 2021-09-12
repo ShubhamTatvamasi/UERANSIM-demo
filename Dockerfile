@@ -33,4 +33,8 @@ RUN make && \
     mv ./build/nr-gnb \
        ./build/nr-cli \
        ./build/nr-ue \
-    /usr/local/bin
+    /usr/local/bin && \
+    mkdir -p /UERANSIM/config && \
+    mv ./config/open5gs-gnb.yaml \
+       ./config/open5gs-ue.yaml \
+
