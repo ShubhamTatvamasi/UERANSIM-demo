@@ -2,8 +2,6 @@ FROM ubuntu:hirsute
 
 ARG UERANSIM_VERSION=3.2.3
 
-ARG DEBIAN_FRONTEND=noninteractive
-
 RUN apt update && \
     apt install -y \
         cmake \
