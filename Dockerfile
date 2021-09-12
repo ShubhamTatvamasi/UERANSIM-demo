@@ -29,5 +29,8 @@ RUN wget https://github.com/aligungr/UERANSIM/archive/refs/tags/v${UERANSIM_VERS
 
 WORKDIR /root/UERANSIM-${UERANSIM_VERSION}
 
-RUN make
-
+RUN make && \
+    mv ./build/nr-gnb \
+       ./build/nr-cli \
+       ./build/nr-ue \
+    /usr/local/bin
