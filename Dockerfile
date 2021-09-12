@@ -33,3 +33,5 @@ RUN make && \
        ./build/nr-ue \
     /usr/local/bin && \
     mv ./config /config
+
+WORKDIR /config
