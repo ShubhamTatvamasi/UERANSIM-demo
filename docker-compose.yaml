@@ -1,0 +1,27 @@
+version: "3.9"
+
+services:
+  gnb:
+    image: shubhamtatvamasi/ueransim-demo:master
+    container_name: gnb
+    network_mode: host
+    volumes:
+      - ./config:/config/demo
+    cap_add:
+      - SYS_NICE
+    command: nr-gnb -c demo/gnb.yaml
+
+  ue:
+    image: shubhamtatvamasi/ueransim-demo:master
+    container_name: ue
+    network_mode: host
+    volumes:
+      - ./config:/config/demo
+    depends_on:
+      - gnb
+    cap_add:
+      - NET_ADMIN
+      - SYS_NICE
+    devices:
+      - /dev/net/tun
+    command: nr-ue -c demo/ue.yaml
