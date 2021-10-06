@@ -1,6 +1,6 @@
 FROM ubuntu:hirsute
 
-ARG UERANSIM_VERSION=3.2.3
+ARG UERANSIM_VERSION=3.2.4
 
 RUN apt update && \
     apt install -y \
