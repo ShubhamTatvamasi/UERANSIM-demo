@@ -1,4 +1,4 @@
-FROM ubuntu:hirsute
+FROM ubuntu:impish
 
 ARG UERANSIM_VERSION=3.2.4
 
