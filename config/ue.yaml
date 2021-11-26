@@ -1,14 +1,14 @@
 # IMSI number of the UE. IMSI = [MCC|MNC|MSISDN] (In total 15 digits)
-supi: 'imsi-001010000000001'
+supi: 'imsi-901700000000001'
 # Mobile Country Code value of HPLMN
-mcc: '001'
+mcc: '901'
 # Mobile Network Code value of HPLMN (2 or 3 digits)
-mnc: '01'
+mnc: '70'
 
 # Permanent subscription key
-key: '00112233445566778899aabbccddeeff'
+key: '465B5CE8B199B49FAA5F0A2EE238A6BC'
 # Operator code (OP or OPC) of the UE
-op: '63BFA50EE6523365FF14C1F45F88737D'
+op: 'E8ED289DEBA952E4283B54E88E6183CA'
 # This value specifies the OP type and it can be either 'OP' or 'OPC'
 opType: 'OPC'
 # Authentication Management Field (AMF) value
@@ -19,6 +19,7 @@ imei: '356938035643803'
 imeiSv: '4370816125816151'
 
 # List of gNB IP addresses for Radio Link Simulation
+# IP for UERANSIM VM
 gnbSearchList:
   - 192.168.5.58
 
@@ -41,13 +42,11 @@ sessions:
   - type: 'IPv4'
     apn: 'internet'
     slice:
-      sst: 0x01
-      sd: 0x010203
+      sst: 1
 
 # Configured NSSAI for this UE by HPLMN
 configured-nssai:
-  - sst: 0x01
-    sd: 0x010203
+  - sst: 1
 
 # Default Configured NSSAI for this UE
 default-nssai:
