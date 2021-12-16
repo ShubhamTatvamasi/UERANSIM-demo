@@ -1,6 +1,6 @@
 FROM ubuntu:impish
 
-ARG UERANSIM_VERSION=3.2.4
+ARG UERANSIM_VERSION=3.2.5
 
 RUN apt update && \
     apt install -y \
