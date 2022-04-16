@@ -1,6 +1,6 @@
-FROM ubuntu:impish
+FROM ubuntu:jammy
 
-ARG UERANSIM_VERSION=3.2.5
+ARG UERANSIM_VERSION=3.2.6
 
 RUN apt update && \
     apt install -y \
