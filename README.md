@@ -11,3 +11,4 @@ release PDU session:
 docker exec -it ue nr-cli imsi-901700000000001 -e "ps-release 1"
 docker exec -it ue nr-cli imsi-901700000000001 -e 'deregister normal'
 ```
+
